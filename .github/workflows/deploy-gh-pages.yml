@@ -3,7 +3,7 @@ name: Desplegar GitHub Pages
 on:
   push:
     branches:
-      - master 
+      - master # o main, dependiendo de tu rama principal
 
 jobs:
   deploy:
@@ -15,18 +15,19 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 
+          node-version: 18 # o la versión que estés usando
 
       - name: Instalar pnpm
         run: npm install -g pnpm
 
       - name: Instalar dependencias
-        run: pnpm install 
+        run: pnpm install # o npm install, si estás usando npm
 
       - name: Construir el proyecto
-        run: pnpm run build 
+        run: pnpm run build # o npm run build
 
       - name: Desplegar en GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist 
+          folder: dist # La carpeta con los archivos construidos
+          token: ${{ secrets.ACCESS_TOKEN }} # Usa el secreto
