@@ -11,8 +11,8 @@ export const Navbar = ()=>{
   const [ isClosing, setIsClosing ] = useState(false);
   const { theme, setTheme } = useThemeContext();
 
-  const miniLogo = "/assets/logoSmall.webp";
-  const miniLogoDark = "/assets/logoSmallDark.webp";
+  const miniLogo = "assets/logoSmall.webp";
+  const miniLogoDark = "assets/logoSmallDark.webp";
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');

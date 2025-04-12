@@ -43,7 +43,7 @@ export const Projects = ()=>{
           <div className="projects-grid__container">
           {
             totalProjects.map((project, index) => {
-              const imageUrl = `/assets/screenshots/sc-${index + 1}.webp`;
+              const imageUrl = `assets/screenshots/sc-${index + 1}.webp`;
 
               return (
                 <ProjectCard

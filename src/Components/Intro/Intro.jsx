@@ -4,8 +4,8 @@ import "./Intro.css"
 export const Intro = ()=>{
   const { theme, setTheme } = useThemeContext();
 
-  const mainLogo = "/assets/firstLogoTransparent.webp";
-  const mainLogoForDark = "/assets/logoFullWhite.webp";
+  const mainLogo = "assets/firstLogoTransparent.webp";
+  const mainLogoForDark = "assets/logoFullWhite.webp";
 
   return(
     <main className="main">
