@@ -11,7 +11,7 @@ import { Footer } from "./Components/Footer/Footer";
 
 const siteTitle = "Alejandro Lizardiz | Desarrollador Frontend React";
 const siteDescription = "Portafolio de Alejandro Lizardiz, desarrollador frontend junior desde Venezuela. Creando interfaces web modernas, rápidas y efectivas con React y Astro.";
-const siteUrl = "https://www.tu-dominio.com"; 
+const siteUrl = "https://pipoo-py.github.io/lizardizPortfolio/"; 
 
 const App = () => {
   return (
@@ -65,6 +65,7 @@ const App = () => {
             }
           })}
         </script>
+        <link rel="icon" href="icon/favicon.ico" />
 
       <Navbar />
       <GridSmallBackground className="h-screen">

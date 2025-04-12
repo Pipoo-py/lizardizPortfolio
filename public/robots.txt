@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pipoo-py.github.io/lizardizPortfolio/sitemap.xml
