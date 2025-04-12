@@ -1,0 +1,38 @@
+.about-section {
+  padding: 4rem 2rem; 
+}
+
+.about-section__container {
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.about-section__container h2 {
+  color: var(--acento-azul-profundo); 
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: left; 
+}
+
+.about-section__container p {
+  color: var(--texto-pizarra); 
+  line-height: 1.7; 
+  margin-bottom: 1rem;
+  font-size: 1.1rem; 
+}
+
+.about-section__container a {
+  color: var(--acento-teal); 
+  text-decoration: none; 
+  font-weight: bold;
+  transition: color 0.3s ease; 
+}
+
+.about-section__container a:hover {
+  color: var(--acento-violeta); 
+}
+
+
+.about-section__container p:last-child {
+  margin-bottom: 0; 
+

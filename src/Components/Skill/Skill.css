@@ -1,0 +1,35 @@
+
+
+.skill__container{
+  background-color: var(--contraste-gris-perla);
+  padding: 6px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: .7rem;
+  color: var(--acento-violeta);
+  font-size: 1rem;
+  transition: backgrond-color .3s, color .3s;
+}
+
+.skill__container:hover{
+  background-color: var(--acento-violeta);
+  color: var(--base-blanco-nieve);
+}
+
+.skill__container:hover span{
+  color: var(--base-blanco-nieve)
+}
+
+.skill{
+  display: grid;
+  place-content: center;
+
+}
+
+.skill__container span{
+  color: var(--texto-carbon);
+  transition: color .3s;
+  
+}

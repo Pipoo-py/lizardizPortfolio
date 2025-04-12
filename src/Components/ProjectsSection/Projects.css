@@ -1,0 +1,23 @@
+
+
+.projects__section-container{
+  background-color: var(--contraste-gris-perla);
+  padding: 24px;
+}
+
+.projects-grid__container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-content: center;
+  gap: 2rem;
+
+}
+
+.projects__title{
+  text-align: center;
+  font-size: clamp(1.5rem, 50dvw, 2.5rem);
+  animation-name: viewTitle;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50% , cover 50% exit 100%;
+  animation-fill-mode: both; 
+}
