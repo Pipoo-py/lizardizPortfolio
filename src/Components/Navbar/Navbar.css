@@ -89,7 +89,7 @@
 
   .nav__sections-container{
     transform: translateX(150dvw);
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;

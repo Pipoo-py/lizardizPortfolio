@@ -9,8 +9,8 @@ import { Form } from "./Components/Form/Form";
 import { Footer } from "./Components/Footer/Footer";
 
 
-const siteTitle = "Alejandro Lizardiz | Desarrollador Frontend React";
-const siteDescription = "Portafolio de Alejandro Lizardiz, desarrollador frontend junior desde Venezuela. Creando interfaces web modernas, rápidas y efectivas con React y Astro.";
+const siteTitle = "Alejandro Salazar | Desarrollador Frontend React";
+const siteDescription = "Portafolio de Alejandro Salazar Lizardiz, desarrollador frontend junior desde Venezuela. Creando interfaces web modernas, rápidas y efectivas con React y Astro.";
 const siteUrl = "https://pipoo-py.github.io/lizardizPortfolio/"; 
 
 const App = () => {
@@ -61,7 +61,7 @@ const App = () => {
         "name": siteTitle,
         "publisher": { 
             "@type": "Person",
-            "name": "Alejandro Lizardiz"
+            "name": "Alejandro Salazar Lizardiz"
             }
           })}
         </script>

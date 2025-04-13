@@ -4,7 +4,7 @@ import { pluginReact } from '@rsbuild/plugin-react';
 export default defineConfig({
   plugins: [pluginReact()],
   html:{
-    title: "Alejandro Lizardiz | Desarrollador Frontend React"
+    title: "Alejandro Salazar | Desarrollador Frontend React"
   },
   output:{
      assetPrefix: "/lizardizPortfolio/", 

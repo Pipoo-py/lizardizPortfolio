@@ -10,6 +10,7 @@ export const Navbar = ()=>{
   const [ mobileIsOpen, setMobileIsOpen ] = useState(false);
   const [ isClosing, setIsClosing ] = useState(false);
   const { theme, setTheme } = useThemeContext();
+  const x = window.matchMedia("(max-width: 700px)");
 
   const miniLogo = "assets/logoSmall.webp";
   const miniLogoDark = "assets/logoSmallDark.webp";
