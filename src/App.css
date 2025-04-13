@@ -28,6 +28,7 @@ body {
   background-color: var(--base-blanco-nieve);
   color: var(--texto-carbon); /* Color de texto por defecto para modo claro */
   transition: var(--theme-transition);
+  overflow-x: hidden;
 }
 
 h1,
