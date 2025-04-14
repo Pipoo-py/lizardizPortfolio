@@ -1,29 +1,10 @@
-# Rsbuild project
+# Mi portafolio web
 
-## Setup
+## Sobre esta página
+Este es el repositorio donde se encuentra el código de mi portafolio web como desarrollador frontend junior.
 
-Install the dependencies:
+### Tecnologías
 
-```bash
-pnpm install
-```
+HTML, CSS, JS y React fueron las tecnologias usadas para su desarrollo, planeo migrar a Astro en cuanto aprenda dicha tecnologia.
 
-## Get started
-
-Start the dev server:
-
-```bash
-pnpm dev
-```
-
-Build the app for production:
-
-```bash
-pnpm build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm preview
-```
+Puedes ingresar al sitio: [https://pipoo-py.github.io/lizardizPortfolio/] para contactarme.
