@@ -1,14 +1,9 @@
 
 
-/* SkillsSection.css */
-
 .skills-section__title {
   padding: 48px;
   text-align: center;
   font-size: clamp(1.5rem, 50dvw, 2.5rem);
-  /* La animación viewTitle puede o no funcionar en Firefox por defecto.
-     Podrías aplicar una técnica similar si es crítica, o simplemente
-     aceptar que no se anime en todos los navegadores */
   animation-name: viewTitle;
   animation-timeline: view();
   animation-range: entry 30% cover 70%, cover 60% exit 100%;
@@ -23,7 +18,6 @@
   flex-wrap: wrap;
 }
 
-/* --- Estilos para .skill-div --- */
 .skill-div {
   width: clamp(300px, 50dvw, 400px);
   padding: 64px;
@@ -31,41 +25,34 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  border: 1px solid var(--acento-teal); /* Asegúrate que esta variable esté definida */
+  border: 1px solid var(--acento-teal); 
   border-radius: 6px;
 
-  /* --- ESTADO INICIAL Y TRANSICIÓN PARA FALLBACK --- */
   opacity: 0;
   transform: translateY(30px) scale(0.9);
   filter: blur(2px);
-  /* Transición suave para el fallback (ajusta la duración/timing si quieres) */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out, filter 0.6s ease-out;
 }
 
-/* --- CLASE AÑADIDA POR JS CUANDO EL ELEMENTO ES VISIBLE (FALLBACK) --- */
 .skill-div.is-visible {
   opacity: 1;
   transform: translateY(0) scale(1);
   filter: blur(0px);
 }
 
-/* --- ESTILOS ORIGINALES CON view() SOLO SI SON SOPORTADOS --- */
 @supports (animation-timeline: view()) {
   .skill-div {
-    /* Resetea/sobrescribe los estilos de fallback */
-    opacity: 0; /* La animación controlará la opacidad */
+    opacity: 0; 
     transform: none;
     filter: none;
-    transition: none; /* Desactiva la transición del fallback */
+    transition: none; 
 
-    /* Aplica la animación original con view() */
     animation: fadeInOut linear;
     animation-timeline: view();
     animation-range: entry 20% cover 80%, cover 40% exit 100%;
-    animation-fill-mode: backwards; /* O 'both' */
+    animation-fill-mode: backwards; 
   }
 
-  /* Ajustes para móvil si view() es soportado */
   @media screen and (max-width: 500px) {
     .skill-div {
        animation-name: fadeInOutMobile;
@@ -76,22 +63,18 @@
 }
 
 
-/* --- Estilos internos --- */
 .skill-div h4 {
   text-align: center;
   font-size: clamp(1rem, 50dvw, 1.5rem);
 }
 
-/* --- Media Query General (si no está dentro de @supports) --- */
 @media screen and (max-width: 500px){
   .skills-section__container{
     padding: 24px;
   }
-  /* No necesitas las reglas de animación móvil aquí si están dentro de @supports */
 }
 
 
-/* --- Keyframes (Asegúrate que estén definidos) --- */
 @keyframes viewTitle {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }

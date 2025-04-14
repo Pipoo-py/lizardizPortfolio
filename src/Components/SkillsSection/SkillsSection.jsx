@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'; // Importa useEffect
+import React, { useEffect } from 'react'; 
 import { Skill } from "../Skill/Skill";
-import "./SkillsSection.css"; // Importa tu CSS modificado
+import "./SkillsSection.css";
 
 export const SkillsSection = () => {
 

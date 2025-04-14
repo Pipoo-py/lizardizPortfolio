@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  /* Paleta modo claro (por defecto) */
   --base-blanco-nieve: #FDFEFF;
   --contraste-gris-perla: #EFF1F3;
   --texto-carbon: #1A202C;
@@ -12,7 +11,6 @@
   --acento-emergencia: #CC3333;
   --acento-violeta: #6D28D9;
 
-  /* Transiciones para cambio de tema */
   --theme-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -26,7 +24,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   background-color: var(--base-blanco-nieve);
-  color: var(--texto-carbon); /* Color de texto por defecto para modo claro */
+  color: var(--texto-carbon); 
   transition: var(--theme-transition);
 }
 
@@ -37,17 +35,13 @@ h4,
 h5,
 h6 {
   font-family: "Outfit", sans-serif;
-  color: var(--texto-carbon); /* Color de encabezados por defecto para modo claro */
+  color: var(--texto-carbon);
   transition: color 0.3s ease;
 }
 
-/* ======================================== */
-/* ==== Estilos Modo Oscuro Globales ==== */
-/* ======================================== */
-
 body.dark {
-  background-color: var(--texto-carbon); /* Fondo oscuro principal */
-  color: var(--contraste-gris-perla); /* Color de texto general para modo oscuro */
+  background-color: var(--texto-carbon); 
+  color: var(--contraste-gris-perla); 
 }
 
 body.dark h1,
@@ -56,12 +50,11 @@ body.dark h3,
 body.dark h4,
 body.dark h5,
 body.dark h6 {
-  color: var(--base-blanco-nieve); /* Encabezados claros en fondo oscuro */
+  color: var(--base-blanco-nieve); 
 }
 
 body.dark .main__p {
-  /* Asumiendo que .main__p es un párrafo principal que necesita resaltarse */
-  background-color: #2D3748; /* Un gris oscuro ligeramente diferente al fondo */
+  background-color: #2D3748; 
   color: var(--contraste-gris-perla);
   padding: 12px;
   border-radius: 6px;
@@ -69,9 +62,8 @@ body.dark .main__p {
 }
 
 body.dark .main__img-container img {
-  /* Este filtro ya estaba, lo mantenemos si aplica a la imagen principal */
    width: 100%;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1)); /* Sombra sutil blanca o clara */
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1)); 
 }
 
 body.dark .nav {
@@ -79,60 +71,55 @@ body.dark .nav {
   animation-timeline: scroll(root); 
   animation-range: 0px 300px; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
-  /* Estilos base para cuando no hay scroll */
   background-color: var(--texto-carbon);
   backdrop-filter: blur(0);
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 body.dark .nav__ul-li a {
-  color: var(--contraste-gris-perla); /* Color enlaces nav modo oscuro */
+  color: var(--contraste-gris-perla); 
   transition: color 0.3s ease;
 }
 body.dark .nav__ul-li a:hover {
-  color: var(--acento-teal); /* Color hover enlaces nav modo oscuro */
+  color: var(--acento-teal); 
 }
 
 
 body.dark .projects__section-container {
-  /* Si necesitas que esta sección tenga fondo diferente en modo oscuro */
-  background-color: transparent; /* O un color específico: #2D3748; */
+  background-color: transparent; 
    transition: var(--theme-transition);
 }
 
-/* --- Estilos Modo Oscuro Específicos para ProjectCard --- */
 
 body.dark .project-view__container {
-  background-color: #2D3748; /* Un gris oscuro, diferente del fondo principal */
-  border-color: #4A5568; /* Borde un poco más claro que el fondo de la tarjeta */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra adaptada al modo oscuro */
+  background-color: #2D3748;
+  border-color: #4A5568; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
 }
 
-/* El color del título ya se maneja con body.dark h4, pero lo dejamos por especificidad */
 body.dark .project-view__title {
   color: var(--base-blanco-nieve);
 }
 
 body.dark .project-view__description {
-  color: var(--contraste-gris-perla); /* Texto secundario claro */
+  color: var(--contraste-gris-perla); 
 }
 
-/* Estilos modo oscuro para las skills (si usas .skill-tag) */
 body.dark .skill-tag {
-  background-color: var(--texto-pizarra); /* Fondo gris medio */
-  color: var(--base-blanco-nieve); /* Texto claro */
-  border: 1px solid var(--acento-teal); /* Borde de acento opcional */
+  background-color: var(--texto-pizarra); 
+  color: var(--base-blanco-nieve); 
+  border: 1px solid var(--acento-teal); 
 }
 
 body.dark .project-view__button {
-  background-color: var(--acento-teal); /* Usamos Teal como acento principal en botones dark */
-  color: var(--texto-carbon); /* Texto oscuro sobre fondo Teal claro */
+  background-color: var(--acento-teal); 
+  color: var(--texto-carbon); 
 }
 
 
 body.dark .project-view__button:hover {
-  background-color: #2C7A7B; /* Teal más oscuro para hover */
-   color: var(--base-blanco-nieve); /* Texto claro en hover */
+  background-color: #2C7A7B; 
+   color: var(--base-blanco-nieve); 
    transform: translateY(-2px);
 }
 
@@ -141,85 +128,81 @@ body.dark .project-view__button:active {
 }
 
 body.dark .form-section__title {
-  color: var(--base-blanco-nieve); /* El h2 general ya lo cubre, pero por especificidad */
+  color: var(--base-blanco-nieve); 
 }
 
 body.dark .form-section__form {
-  background-color: #2D3748; /* Fondo gris oscuro para el form */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más oscura */
+  background-color: #2D3748; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
 }
 
-/* Si se usa el h2 interno del form */
 body.dark .form-section__form h2 {
   color: var(--base-blanco-nieve);
 }
 
 body.dark label {
-  color: var(--contraste-gris-perla); /* Texto de label claro */
+  color: var(--contraste-gris-perla); 
 }
 
 body.dark input[type="text"],
 body.dark input[type="email"],
 body.dark textarea {
-  background-color: var(--texto-carbon); /* Fondo de input muy oscuro */
-  color: var(--contraste-gris-perla); /* Texto de input claro */
-  border-color: #4A5568; /* Borde gris medio-oscuro */
+  background-color: var(--texto-carbon); 
+  color: var(--contraste-gris-perla); 
+  border-color: #4A5568; 
 }
 
 body.dark input[type="text"]::placeholder,
 body.dark input[type="email"]::placeholder,
 body.dark textarea::placeholder {
-    color: var(--texto-pizarra); /* Placeholder un poco más claro que el borde */
-    opacity: 0.6; /* Menos opacidad */
+    color: var(--texto-pizarra); 
+    opacity: 0.6; 
 }
 
 body.dark input[type="text"]:focus,
 body.dark input[type="email"]:focus,
 body.dark textarea:focus {
-  border-color: var(--acento-teal); /* Borde Teal en focus */
-  background-color: var(--texto-carbon); /* Mantiene fondo oscuro */
-  color: var(--base-blanco-nieve); /* Texto más brillante en focus */
-  box-shadow: 0 0 0 3px rgba(49, 151, 149, 0.3); /* Resplandor Teal */
+  border-color: var(--acento-teal); 
+  background-color: var(--texto-carbon); 
+  color: var(--base-blanco-nieve);
+  box-shadow: 0 0 0 3px rgba(49, 151, 149, 0.3); 
 }
 
 body.dark button[type="submit"] {
-  background-color: var(--acento-teal); /* Botón Teal */
-  color: var(--texto-carbon); /* Texto oscuro sobre Teal */
+  background-color: var(--acento-teal); 
+  color: var(--texto-carbon); 
 }
 
 body.dark button[type="submit"]:hover {
-  background-color: #2C7A7B; /* Teal más oscuro */
-  color: var(--base-blanco-nieve); /* Texto claro en hover */
+  background-color: #2C7A7B; 
+  color: var(--base-blanco-nieve); 
 }
 
 body.dark button[type="submit"]:disabled {
-   background-color: #4A5568; /* Gris medio oscuro */
-   color: var(--texto-pizarra); /* Texto gris claro */
-   /* cursor y opacidad ya están definidos en el base */
+   background-color: #4A5568; 
+   color: var(--texto-pizarra); 
 }
 
 
-/* --- Errores en Dark Mode --- */
 body.dark .form-group.error input,
 body.dark .form-group.error textarea {
-  border-color: var(--acento-emergencia); /* Mantiene borde rojo */
-  background-color: #4B2F2F; /* Fondo rojo oscuro muy sutil */
-  color: var(--base-blanco-nieve); /* Asegura texto claro en error */
+  border-color: var(--acento-emergencia); 
+  background-color: #4B2F2F; 
+  color: var(--base-blanco-nieve); 
 }
 
 body.dark .form-group.error input:focus,
 body.dark .form-group.error textarea:focus {
    border-color: var(--acento-emergencia);
-   box-shadow: 0 0 0 3px rgba(204, 51, 51, 0.3); /* Resplandor rojo */
+   box-shadow: 0 0 0 3px rgba(204, 51, 51, 0.3); 
 }
 
-/* --- Mensaje Éxito en Dark Mode --- */
 body.dark .thanks-title {
-  color: var(--acento-teal); /* Título Teal en modo oscuro */
+  color: var(--acento-teal); 
 }
 
 body.dark .thanks-p {
-  color: var(--contraste-gris-perla); /* Párrafo claro en modo oscuro */
+  color: var(--contraste-gris-perla); 
 }
 
 body.dark .social-container a{
@@ -256,17 +239,16 @@ body.dark .social-container a{
   }
 }
 
-/* Animación scroll Nav para modo oscuro */
 @keyframes navScrollDark {
-  from { /* Estado inicial (arriba) */
+  from { 
     background-color: var(--texto-carbon);
     backdrop-filter: blur(0px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra inicial */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
   }
-  to { /* Estado al hacer scroll */
-    background-color: rgba(26, 32, 44, 0.8); /* --texto-carbon con transparencia */
-    backdrop-filter: blur(8px); /* Efecto blur */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+  to { 
+    background-color: rgba(26, 32, 44, 0.8); 
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   }
 }
 
